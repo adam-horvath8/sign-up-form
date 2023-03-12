@@ -17,7 +17,6 @@ body{
 }
 
 .header-div{
-    background-color: aquamarine;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -25,24 +24,40 @@ body{
     padding-top:40px; 
     padding-left: 40px;
     background-color: rgb(224, 224, 224);
+    padding-top: 0px;
 }
 
 form{
-    flex: 2;
-    background-color: rgb(238, 238, 238);
+    flex: 10;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px  black;
 }
 
 .footer-div{
     background-color: bisque;
     flex: 1;
     background-color: rgb(224, 224, 224);
-    padding: 50px;
+    padding: 30px 50px;
 }
+
+:root{
+    --theme-color:rgb(72, 72, 255);
+}
+
 
 img{
     object-fit: cover;
     width: 700px;
     height: 100vh;
+}
+
+h1{
+    color: var(--theme-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo-div{
@@ -59,28 +74,74 @@ img{
 #logo{
     width: 300px;
     height: 100px;
+    border: 10px solid var(--theme-color);
 }
 .header-div p{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 }
 
-.header-div p:nth-child(2) {
+.header-div p:nth-child(3) {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 button{
-    background-color: rgb(62, 142, 62);
+    background-color: var(--theme-color);
     padding: 20px 35px;
     color: white;
     border: none;
     font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
     border-radius: 10px;
+    box-shadow: 2px 3px 5px rgb(12, 12, 146);
 }
 
 button:hover{
     opacity: 0.9;
+}
+
+
+.left-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-form{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border-width: 2px;
+    box-shadow: none;
+    border-color: black;
+}
+input:focus{
+    background-color: rgb(230, 230, 255);
+}
+
+input:invalid{
+    
+   
+}
+
+input:valid{
+    border-color: green;
+    background-color: rgb(231, 255, 231);
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
 }
