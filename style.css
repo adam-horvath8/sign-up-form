@@ -33,9 +33,12 @@ form{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-sizing: border-box;
     box-shadow: 10px 10px 5px  black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
+
+
 
 .footer-div{
     background-color: bisque;
@@ -94,13 +97,14 @@ button{
     border: none;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 2px 3px 5px rgb(12, 12, 146);
+    position: absolute;
+    top: 720px;
 }
 
 button:hover{
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 
@@ -128,13 +132,10 @@ input{
     box-shadow: none;
     border-color: black;
 }
-input:focus{
-    background-color: rgb(230, 230, 255);
-}
 
-input:invalid{
-    
-   
+input:invalid:focus{
+    background-color: rgb(253, 230, 230);
+    box-shadow: 2px 2px 5px black;
 }
 
 input:valid{
@@ -145,3 +146,4 @@ input:valid{
 label{
     font-family: Arial, Helvetica, sans-serif;
 }
+
